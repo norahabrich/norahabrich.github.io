@@ -81,7 +81,9 @@ Aucune bibliothèque : JavaScript natif (« vanilla JS »).
 
 ```
 norahabrich.github.io/
-├── index.html   ← tout le site : HTML + CSS (<style>) + JavaScript (<script>)
+├── index.html   ← structure et contenu (HTML)
+├── style.css    ← design, thème clair/sombre, responsive (CSS)
+├── script.js    ← interactivité et jeu 2048 (JavaScript)
 └── README.md    ← ce fichier
 ```
 
