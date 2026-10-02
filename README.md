@@ -21,14 +21,14 @@ Site statique, sans framework ni dépendance, hébergé gratuitement sur GitHub 
 
 ---
 
-## HTML5 en détail
+## HTML5
 
 - Structure sémantique : `header`, `nav`, `main`, `section`, `footer`
 - Navigation par ancres (`#apropos`, `#experience`, `#projets`…) avec défilement fluide
 - Métadonnées : `charset`, `viewport` (mobile), `description` (référencement)
 - Accessibilité : rôles ARIA (`tablist`, `tab`, `tabpanel`), états `aria-selected`, `aria-pressed`, `aria-expanded`, libellés `aria-label`
 
-## CSS3 en détail
+## CSS3
 
 - **Variables CSS** (`:root { --accent: …; }`) : toute la palette et les polices sont centralisées
 - **Thème clair / sombre** : `prefers-color-scheme` + attribut `data-theme` piloté en JavaScript
@@ -40,7 +40,7 @@ Site statique, sans framework ni dépendance, hébergé gratuitement sur GitHub 
 - **Accessibilité** : `:focus-visible`, respect de `prefers-reduced-motion`
 - **Typographie** : `text-wrap: balance`, `font-variant-numeric: tabular-nums`
 
-## JavaScript en détail
+## JavaScript
 
 Aucune bibliothèque : JavaScript natif (« vanilla JS »).
 
