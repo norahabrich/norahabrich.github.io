@@ -19,18 +19,18 @@
 
 /* experience */
 const XP=[
-  {co:"OMEGA NÉGOCE",role:"Responsable Administrative et Financière (RAF)",when:"Oct. 2025 — Juin 2026",where:"Maroc",
-   items:["Pilotage d'un contrôle fiscal complet (IS, TVA, IR/salaires, 2022–2025) : préparation des dossiers, réconciliations pluriannuelles et sécurisation de la conformité.","Génération et réconciliation des déclarations de TVA via des flux EDI/XML, fiabilisation des données entre systèmes comptables et fiscaux.","Conformité fiscale et administrative sur plusieurs entités du groupe, en lien avec les enjeux douaniers et de commerce international (import, devises).","Automatisation d'outils de suivi (trésorerie, créances, simulation IS/TVA) sous Excel/VBA pour fiabiliser le reporting financier."],
-   tags:["Fiscalité","TVA","EDI / XML","Excel / VBA","Trésorerie"]},
-  {co:"Danone",role:"Digital Finance Analyst · stage de fin d'études",when:"Fév. 2025 — Juil. 2025",where:"Paris, France",
-   items:["Amélioration des dashboards Power BI dans le cadre du programme Reporting Factory.","Exploration de cas d'usage IA (Microsoft Copilot) pour automatiser des processus métiers et financiers.","Création de vidéos e-learning et formation des utilisateurs Finance.","Animation de la communauté Reporting Factory (Business Owner Day, workshops utilisateurs)."],
-   tags:["Power BI","Copilot","Reporting","Formation"]},
-  {co:"Wafa Gestion",role:"Analyste en gestion de portefeuille · stage de fin d'études",when:"Fév. 2024 — Juil. 2024",where:"Casablanca, Maroc",
-   items:["Optimisation de portefeuille avec le modèle Black-Litterman pour des allocations d'ETF.","Prédiction des vues des investisseurs via des modèles de Machine Learning et des données macroéconomiques."],
-   tags:["Python","Machine Learning","Black-Litterman","ETF"]},
-  {co:"Bank Al-Maghrib",role:"Stagiaire en conformité bancaire",when:"Août 2023",where:"Maroc",
-   items:["Suivi des opérations pour garantir la conformité réglementaire.","Collaboration avec des clients institutionnels sur les exigences légales."],
-   tags:["Conformité","Réglementation bancaire"]}
+  {co:"Danone · Finance AI",role:"Finance AI & Automation (CDD) · suite à mon alternance",when:"2025 — 2026 · 9 mois",where:"Paris, France",
+   items:["Portefeuille de cas d'usage IA : identification, qualification et priorisation des opportunités avec les équipes Finance et la communauté Finance AI Champions, selon trois critères : valeur métier, faisabilité technique et passage à l'échelle.","Conception et test de solutions : Microsoft Copilot, agents IA, Python, workflows Power Automate et analytics avancés, de la preuve de concept à la validation, au sein des squads avec l'IT Data & Analytics ; traduction des besoins Finance en spécifications fonctionnelles et techniques.","Mesure de l'impact : définition et suivi des KPI d'adoption et de productivité (taux d'usage de Copilot, temps gagné, utilisateurs actifs) ; reporting régulier à la Direction Digital & AI Acceleration.","Conduite du changement : actions d'adoption auprès des équipes Finance (AI Day, hackathon, formations).","Veille technologique : suivi des nouveautés Copilot et IA générative et diffusion auprès des équipes Finance pour faire émerger de nouveaux cas d'usage."],
+   tags:["Copilot","Agents IA","Python","Power Automate","KPI d'adoption"]},
+  {co:"Danone · Reporting Factory",role:"Digital Finance Analyst (alternance) · Direction Finance Groupe",when:"2024 — 2025 · 12 mois",where:"Paris, France",
+   items:["Dashboards financiers Power BI à l'échelle du Groupe : conception avec les Business Owners Finance et l'IT (KPI, états financiers) de tableaux de bord utilisés par les équipes Finance de Danone dans le monde entier, chaque pays accédant à ses propres chiffres selon ses droits d'accès ; analyse des principaux indicateurs de performance.","Chaîne de reporting de bout en bout : analyse fonctionnelle et technique ERP → Data Lake → ETL → Data Mart → Power BI ; suivi des rafraîchissements et des anomalies de données jusqu'à leur correction, pour garantir la fiabilité des chiffres publiés.","Delivery Agile : sprints sous Asana, tests fonctionnels (UAT), suivi des corrections avec les équipes techniques et mise en production ; rédaction en anglais des Weekly Releases.","Support et gouvernance : support utilisateur global sur les outils de reporting ; respect des règles de sécurité et de gouvernance sur des données financières sensibles.","Animation et formation : conception et déploiement d'un SharePoint Finance (documentation, formations, communication projet) ; amélioration du parcours e-learning Finance Data & Reporting ; point de contact d'une communauté Finance internationale."],
+   tags:["Power BI","ETL / Data Mart","Agile","UAT","Gouvernance"]},
+  {co:"Wafa Gestion",role:"Analyste Quantitatif · Gestion d'actifs (stage)",when:"2024 · 6 mois",where:"Casablanca, Maroc",
+   items:["Allocation et machine learning : modèle Black-Litterman d'allocation tactique d'ETF, alimenté par 8 modèles de classification supervisée (validation croisée) pour quantifier les vues des analystes et prévoir les rendements.","Pipeline de données Python : collecte automatisée de 10 ans de données de marché, contrôle qualité, traitement des valeurs manquantes et création d'une centaine d'indicateurs.","Risque et performance : modèles de volatilité (ARCH), VaR / CVaR ; backtests contre benchmark (Sharpe, perte maximale)."],
+   tags:["Python","Machine Learning","Black-Litterman","VaR / CVaR"]},
+  {co:"Direction Générale des Impôts",role:"Data Scientist · Détection de la fraude à la TVA (stage)",when:"2023 · 4 mois",where:"Agadir, Maroc",
+   items:["Préparation de la donnée : analyse statistique et prétraitement (nettoyage, encodage, rééquilibrage des classes) de grands volumes de déclarations fiscales.","Modélisation : développement et évaluation de modèles de machine learning en Python (Random Forest, XGBoost) pour scorer les dossiers à risque.","Outil pour le terrain : outil Excel/VBA permettant aux contrôleurs fiscaux de prioriser leurs dossiers."],
+   tags:["Python","Random Forest","XGBoost","Excel / VBA"]}
 ];
 (function(){
   const tabs=document.getElementById('tabs'), panel=document.getElementById('panel');
@@ -46,18 +46,14 @@ const XP=[
 
 /* projects */
 const PROJ=[
-  {cat:"Finance quantitative",title:"Allocation d'ETF avec Black-Litterman et Machine Learning",short:"Un modèle d'allocation qui combine l'équilibre de marché et des vues d'investisseurs prédites par ML.",
-   long:"Chez Wafa Gestion, j'ai optimisé des allocations d'ETF avec le modèle Black-Litterman. Les vues des investisseurs, habituellement saisies à la main, étaient prédites par des modèles de Machine Learning entraînés sur des données macroéconomiques.",tags:["Python","Machine Learning","Black-Litterman","Données macro"],ctx:"Wafa Gestion · 2024"},
-  {cat:"BI & reporting",title:"Dashboards Power BI de la Reporting Factory",short:"Amélioration des tableaux de bord financiers utilisés par les équipes Finance de Danone.",
-   long:"Dans le programme Reporting Factory, j'ai participé à l'amélioration des dashboards Power BI, formé les utilisateurs Finance par des vidéos e-learning et animé la communauté (Business Owner Day, workshops).",tags:["Power BI","Reporting","E-learning"],ctx:"Danone · 2025"},
-  {cat:"BI & reporting",title:"Cas d'usage IA avec Microsoft Copilot",short:"Exploration de l'IA générative pour automatiser des processus métiers et financiers.",
-   long:"Identification et test de cas d'usage Copilot pour réduire les tâches manuelles des équipes Finance, en lien avec la Reporting Factory.",tags:["Copilot","IA générative","Automatisation"],ctx:"Danone · 2025"},
-  {cat:"Automatisation",title:"Déclarations de TVA en flux EDI/XML",short:"Génération et réconciliation automatisées des déclarations de TVA entre comptabilité et fiscalité.",
-   long:"Mise en place de la génération des déclarations de TVA via des flux EDI/XML et réconciliation des données entre les systèmes comptables et fiscaux, pour des déclarations fiables et traçables.",tags:["EDI","XML","TVA","Qualité des données"],ctx:"OMEGA NÉGOCE · 2025–2026"},
-  {cat:"Automatisation",title:"Outils de suivi trésorerie, créances et simulation IS/TVA",short:"Des outils Excel/VBA qui fiabilisent le reporting financier au quotidien.",
-   long:"Conception d'outils automatisés de suivi de trésorerie et de créances, et d'un simulateur IS/TVA, pour remplacer des calculs manuels et sécuriser le reporting.",tags:["Excel","VBA","Trésorerie","Fiscalité"],ctx:"OMEGA NÉGOCE · 2025–2026"},
-  {cat:"Automatisation",title:"Réconciliations pour un contrôle fiscal sur 4 exercices",short:"Préparation des dossiers et réconciliations pluriannuelles (IS, TVA, IR/salaires) de 2022 à 2025.",
-   long:"Pilotage complet d'un contrôle fiscal : collecte et structuration des données sur quatre exercices, réconciliations entre sources et sécurisation de la conformité face à l'administration fiscale.",tags:["Réconciliation","IS","TVA","IR"],ctx:"OMEGA NÉGOCE · 2025–2026"}
+  {cat:"BI & reporting",title:"Dashboards financiers Power BI à l'échelle du Groupe",short:"Des tableaux de bord utilisés par les équipes Finance de Danone dans le monde entier.",
+   long:"Conception avec les Business Owners Finance et l'IT (KPI, états financiers), chaque pays accédant à ses propres chiffres selon ses droits d'accès. Chaîne de reporting de bout en bout ERP → Data Lake → ETL → Data Mart → Power BI, avec suivi des rafraîchissements et des anomalies jusqu'à leur correction.",tags:["Power BI","ETL","Data Mart","KPI"],ctx:"Danone · 2024–2025"},
+  {cat:"IA & automatisation",title:"Portefeuille de cas d'usage IA pour la Finance",short:"Copilot, agents IA, Python et Power Automate, de la preuve de concept à la validation.",
+   long:"Identification et priorisation des opportunités selon la valeur métier, la faisabilité technique et le passage à l'échelle ; conception et test des solutions avec l'IT Data & Analytics ; suivi des KPI d'adoption et de productivité (taux d'usage de Copilot, temps gagné, utilisateurs actifs).",tags:["Copilot","Agents IA","Power Automate","KPI d'adoption"],ctx:"Danone · 2025–2026"},
+  {cat:"Finance quantitative",title:"Allocation d'ETF avec Black-Litterman et Machine Learning",short:"Un modèle d'allocation tactique alimenté par 8 modèles de classification supervisée.",
+   long:"Les vues des analystes sont quantifiées par des modèles de classification (validation croisée) pour prévoir les rendements. Pipeline Python sur 10 ans de données de marché, une centaine d'indicateurs, modèles ARCH, VaR / CVaR et backtests contre benchmark (Sharpe, perte maximale).",tags:["Python","Machine Learning","Black-Litterman","Backtest"],ctx:"Wafa Gestion · 2024"},
+  {cat:"Data science",title:"Détection de la fraude à la TVA",short:"Scoring des dossiers à risque par machine learning sur de grands volumes de déclarations fiscales.",
+   long:"Analyse statistique et prétraitement (nettoyage, encodage, rééquilibrage des classes), modèles Random Forest et XGBoost en Python, et outil Excel/VBA permettant aux contrôleurs fiscaux de prioriser leurs dossiers.",tags:["Python","Random Forest","XGBoost","VBA"],ctx:"DGI · 2023"}
 ];
 (function(){
   const cats=["Tous",...new Set(PROJ.map(p=>p.cat))];
